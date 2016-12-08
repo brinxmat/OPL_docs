@@ -49,16 +49,16 @@ Patron Client can de developed without any local dependencies, but it is not eff
 ###Instructions
 ####Essential npm scripts
 
-- verify: Run tests and linting.
-- lint: Run linting.
-- start: Starts the project, but KOHA\_API\_USER and KOHA\_API\_PASS must be provided.
-- test\:watch: Start tests and watch for code changes. Will re-run tests on code changes.
-- es5: Compile all js to es5, useful for debugging unit tests in IntelliJ. See the Debugging tests section for more information.
-- dev: Convenience script, run npm start with port 8001 and with KOHA\_API\_USER + KOHA\_API\_PASS
-- devnode: Same as above, except it only runs node without compass. Useful when a lot of node restarts are required and no style changes are performed.
-- killcompass: Will print an error, but will kill stale compass instances (might sometimes happen on ctrl+c'ing from start or dev)
-- prodbuild: Build Patron Client for production
-- production: Run Patron Client in production mode. Must have been built for production previously.
+- ```verify```: Run tests and linting.
+- ```lint```: Run linting.
+- ```start```: Starts the project, but ```KOHA_API_USER``` and ```KOHA_API_PASS``` must be provided.
+- ```test:watch```: Start tests and watch for code changes. Will re-run tests on code changes.
+- ```es5```: Compile all js to es5, useful for debugging unit tests in IntelliJ. See the Debugging tests section for more information.
+- ```dev```: Convenience script, run npm start with port 8001 and with ```KOHA_API_USER``` and ```KOHA_API_PASS```
+- ```devnode```: Same as above, except it only runs node without compass. Useful when a lot of node restarts are required and no style changes are performed.
+- ```killcompass```: Will print an error, but will kill stale compass instances (might sometimes happen on ctrl+c'ing from start or dev)
+- ```prodbuild```: Build Patron Client for production
+- ```production```: Run Patron Client in production mode. Must have been built for production previously.
 
 ####Getting started with development outside Docker
 1. Be ready for ls.ext development.
@@ -74,7 +74,7 @@ Patron Client can de developed without any local dependencies, but it is not eff
 Since the unit tests are written with import syntax not available in node.js, transpiling is required. IntelliJ is then set to run the tests from the transpiled (ES5) code, but thanks to source maps any breakpoint in the original code will hit.
 
 1. Run ```npm run es5``` to start transpiling. This is a watcher and will update any changed files.
-2. In IntelliJ, press Run->Edit Configurations.
+2. In IntelliJ, press Run > Edit Configurations.
 3. Press the + sign and choose Mocha.
 4. In the settings for the Mocha config, change the lines according to the following screenshot: 
 
