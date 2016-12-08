@@ -52,7 +52,7 @@ Patron Client can de developed without any local dependencies, but it is not eff
 - verify: Run tests and linting.
 - lint: Run linting.
 - start: Starts the project, but KOHA\_API\_USER and KOHA\_API\_PASS must be provided.
-- test:watch: Start tests and watch for code changes. Will re-run tests on code changes.
+- test\:watch: Start tests and watch for code changes. Will re-run tests on code changes.
 - es5: Compile all js to es5, useful for debugging unit tests in IntelliJ. See the Debugging tests section for more information.
 - dev: Convenience script, run npm start with port 8001 and with KOHA\_API\_USER + KOHA\_API\_PASS
 - devnode: Same as above, except it only runs node without compass. Useful when a lot of node restarts are required and no style changes are performed.
