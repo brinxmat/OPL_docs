@@ -15,8 +15,18 @@
 ###Steps
 
 - clone [ls.ext](https://github.com/digibib/ls.ext)
-- Run ```make provision```
+- Run ```make docker_compose_up```
 - Run ```make test_one```
+
+###Setting up Koha
+
+In order for Koha to work for development, we have to fix the way sessions are managed.
+
+Go to http://localhost:8081, log in as admin.
+
+Click More > Administration.
+
+In the "Global system preferences" search box, search for ```sessionstorage```, and choose ```Temporary files```, then click ```Save…```.
 
 ##Patron Client development
 ###Setting up IntelliJ
